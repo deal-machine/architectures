@@ -95,6 +95,10 @@
 
 ### Características Arquiteturais
 
+- Operacional
+- Estrutura
+- _Cross-Cutting_
+
 <br>
 
 ---
