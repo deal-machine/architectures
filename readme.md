@@ -95,9 +95,56 @@
 
 ### Características Arquiteturais
 
-- Operacional
-- Estrutura
-- _Cross-Cutting_
+#### Operacionais
+
+- Disponibilidade
+  - é quanto o sistema fica no ar e disponível
+  - SLA - _Service Level Agreement_
+    - o acordo que vc faz com clientes
+  - SLOs _Service Level Objectives_
+    - o objetivo de nível de serviço
+  - SLIs - _Service Level Indicators_
+    - o número real da performance
+- Recuperação de desastres
+- Performance
+- Recuperação - _Backup_
+- Confiabilidade e Segurança
+- Robustes
+- Escalabilidade
+  - The Twelve-Factor App
+    1. Base do código
+    2. Dependências
+    3. Configurações
+    4. Serviços de apoio
+    5. Construa, lance, execute
+    6. Processos
+    7. Vínculo de porta
+    8. Concorrência
+    9. Descartabilidade
+    10. Dev/prod semelhantes
+    11. Logs
+    12. Processos Admin
+
+#### Estruturais
+
+- Configurável
+- Extensibilidade
+- Fácil instalação
+- Reutilização de componentes
+- Internacionalização
+- Fácil manutenção
+- Portabilidade
+- Fácil suporte (_logs, debugging_)
+
+#### _Cross-Cutting_
+
+- Acessibilidade
+- Retenção de dados
+- Autenticação e Autorização
+- Legalidade
+- Privacidade
+- Segurança
+- Usabilidade
 
 <br>
 
@@ -241,13 +288,16 @@
 
 <br>
 
-### Desempenho
+### Performance
 
 > É a medida de quão bem um sistema ou componente executa uma tarefa em relação às expectativas ou requisitos estabelecidos.
 
-- Tempo de resposta
+- Latência - _Response time_ - Tempo de resposta
   - respostas de solicitações ou chamadas
-- Taxa de transferência
+  - medido em miliseconds
+  - tempo de processamento da aplicação + rede + chamadas externas
+- _Throughput_ Taxa de transferência
+  - quantidade de requisições
   - quantidade de dados transferidos em função do tempo
 - Utilização de recursos
   - processamento, memória, armazenamento na execução de tarefas
