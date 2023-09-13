@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "lib": ["ESNext"],
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "bundler",
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
     "moduleDetection": "force",
     "allowImportingTsExtensions": true,
     "noEmit": true,
@@ -14,9 +14,14 @@
     "jsx": "preserve",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
     "allowJs": true,
-    "types": [
-      "bun-types" // add Bun global
-    ]
+    "types": ["bun-types"],
+    "paths": {
+      "@domain/*": ["./src/internals/domain/*"],
+      "@ports/*": ["./src/internals/ports/*"],
+      "@adapters/*": ["./src/externals/adapters/*"],
+      "@shared/*": ["./src/@shared/*"]
+    }
   }
 }
