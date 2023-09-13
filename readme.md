@@ -299,13 +299,28 @@
 - _Throughput_ Taxa de transferência
   - quantidade de requisições
   - quantidade de dados transferidos em função do tempo
-- Utilização de recursos
-  - processamento, memória, armazenamento na execução de tarefas
+- Utilização de recursos computacionais
+  - processamento(CPU)
+  - memória
+  - armazenamento(Disco)
+  - Rede
+- Lógica
+  - _queries_
+  - algoritmos
+  - _overhead_ de _frameworks_
+- concorrência e paralelismo
+- banco de dados e modelagem
+- _caching_
+
 - Confiabilidade
   - funcionar sem falhas
   - funcionar sem interrupções por longos períodos
 - Escalabilidade
   - capacidade em lidar com aumento de requisições, dados sem perda de desempenho
+  - escala vertical
+    - aumentar recurso computacional de uma maquina para melhorar performance
+  - escala horizontal
+    - aumentar a quantidade de máquinas para aumentar o desempenho
 
 #### Estratégias de **CACHE**
 
