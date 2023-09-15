@@ -12,4 +12,16 @@ To run:
 bun run index.ts
 ```
 
+To setup databases:
+
+```bash
+docker compose up
+```
+
+To run tests:
+
+```bash
+bun run test
+```
+
 This project was created using `bun init` in bun v1.0.1. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
