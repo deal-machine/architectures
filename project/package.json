@@ -3,8 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun run src/index.ts",
-    "test": "bun test --runInBand  --logHeapUsage"
+    "dev": "bun run --hot --watch src/index.ts",
+    "test": "NODE_ENV=test bun test --runInBand --logHeapUsage"
   },
   "devDependencies": {
     "bun-types": "latest",
@@ -20,11 +20,13 @@
     "eslint-plugin-promise": "^6.1.1"
   },
   "dependencies": {
-    "pg": "^8.11.3",
+    "@elysiajs/swagger": "^0.6.2",
+    "elysia": "^0.6.23",
     "reflect-metadata": "^0.1.13",
+    "pg": "^8.11.3",
     "sequelize": "^6.32.1",
     "sequelize-typescript": "^2.1.5",
-    "sqlite3": "^5.1.6",
+    "sqlite3": "latest",
     "uuid": "^9.0.0"
   },
   "peerDependencies": {
