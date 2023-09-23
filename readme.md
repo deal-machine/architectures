@@ -270,6 +270,41 @@
     - AppDynamics
     - VisualVM
 
+#### Escalabilidade vs Performance
+
+> Enquanto performance tem o foco em reduzir a latência e aumentar o _throughput_ (taxa de transferência), a escalabilidade visa a possibilidade de aumentar ou diminuir o _throughput_, adicionando ou removendo capacidade computacional.
+
+Escala vertical -> aumenta quantidade de recursos
+Escala horizontal -> aumenta quantidade de instâncias
+
+**Descentralização** - "Tudo pode ser criado e destruído facilmente."
+
+- disco efêmero (transitório/temporário)
+- servidor de aplicação **vs** servidor de _assets_
+- cache centralizado (compartilhável)
+- sessões centralizada
+- _upload_ e gravação de arquivos
+
+**Banco de dados**
+
+- aumento de recurso computacional (discos, memórias, CPU)
+- distribuir responsabilidades (escrita vs leitura) (CQRS)
+- _shards_ (fragmentos) de forma horizontal
+- _serverless_ (s3/dynamoDB)
+- otimização de queries e índices
+  - APM - **Application Performance Monitoring** (Datadog)
+  - CQRS - **Command Query Responsability Segregation**
+
+**_Proxy_ Reverso**
+
+> Um _proxy_ (procurador) reverso é um servidor que fica à frente dos servidores web, e encaminha as solicitações para os servidores web
+
+- redistribui requisições entre os servidores
+- opções
+  - Nginx - _Engine X_
+  - HAProxy - _High Availability_
+  - Traefik
+
 <br>
 
 ### Disponibilidade e Observabilidade
