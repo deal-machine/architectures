@@ -322,6 +322,8 @@
   - escala horizontal
     - aumentar a quantidade de máquinas para aumentar o desempenho
 
+<br>
+
 #### Estratégias de **CACHE**
 
 > Armazenar temporariamente dados que são frequentemente acessados em memória cache para evitar buscar esses dados novamente do local original, como um banco de dados ou sistema de arquivos.
@@ -334,9 +336,33 @@
   - recursos frenquentes são armazenados
 - Cache de sessão
   - informações da sessão do usuário, ou dados transitórios e temporários
-- Cache de CDN
+- Cache de CDN - _Content Delivery Network_
   - uma rede de entrega de conteúdo
   - armazena arquivos de mídia em servidores distribuídos
+
+#### _Caching_
+
+- _Edge computing_ -> cache na borda
+- Dados estáticos
+- Páginas _Web_
+- Funções internas
+  - evita processamentos pesados
+  - acesso ao banco de dados
+- Objetos
+
+#### exclusivo **vs** compartilhado
+
+- exclusivo -> diversas intâncias de cache
+
+  - baixa latência
+  - duplica entre os nós
+  - problemas relacionados a sessões
+
+- compartilhado -> cache centralizado
+  - alta latência
+  - não há duplicação
+  - sessões compartilhadas
+  - banco de dados externo
 
 <br><br>
 
