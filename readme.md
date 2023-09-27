@@ -24,7 +24,7 @@
   - Especialidade em tecnologias específicas de mercado
   - Geração de valor baseado em ferramenta tecnológica
   - Diversidade de profissionais especialistas
-- _Comporate_ - Corporativa
+- _Corporate_ - Corporativa
   - Tem impacto direto na organização como um todo
   - Avaliação de custos em áreas e projetos relacionados a empresa
   - Responsável por avaliação de novas tecnologias
@@ -399,8 +399,47 @@ Escala horizontal -> aumenta quantidade de instâncias
   - sessões compartilhadas
   - banco de dados externo
 
-<br><br>
+<br>
 
----
+### Resiliência
 
-# _Hexagonal Architecture_
+> Conjunto de estratégias adotadas intencionalmente para a **adaptação** de um sistema quando uma falha ocorre.
+
+1. Um sistema em uma arquitetura distribuída precisa adotar mecanismos de autopreservação para garantir ao máximo sua operação com qualidade.
+2. Um sistema não pode ser "egoísta" ao ponto de realizar mais requisições em um sistema que está falhando.
+3. Um sistema lento no ar, muitas vezes é pior do que um sistema fora do ar.
+
+- _Health Check_
+  - Verifica a "saúde" de um sistema
+  - _health check_ de qualidade, ou seja, dados relevantes para verificação de saúde
+- _Rate Limiting_
+  - Protege o sistema baseado no que foi projetado para suportar
+  - Deve-se conhecer o limite do sistema de requisições
+  - Pode ser seletivo por cliente ou tipo de cliente que faz as requisições
+- _Circuit Breaker_
+  - Protege o sistema interrompendo as comunicações para restauração do sistema com falha
+    - circuito fechado -> requisições chegam normalmente
+    - circuito aberto -> requisições não chegam ao sistema
+    - circuito meio aberto -> permite quantidade limitada de requisições para verificar as condições de operação
+- _API Gateway_
+  - centraliza as requisições
+  - aplica regras, políticas, transformações, verificações, _pluggins_, etc...
+  - entende a necessidade individual de cada serviço
+  - implementa _rate limiting, health check_...
+- _Service Mesh_
+  - Malha de serviços
+  - controla o tráfego de rede
+  - gerência de proxicies entre serviços
+  - entende o comportamento da rede e controla o tráfego
+  - mTLS
+    - comunicação criptografada entre serviços
+  - trabalha com _circuit breaker, rerty, timeout, fault injection_, etc...
+- Comunicação assíncrona
+  - evita perda de dados
+  - utiliza _message broker_ que processa dados no tempo de disponibilidade
+  - entender com profundidade _message broker_ e sistema de _stream_
+- _Retry_
+  - garantia de entrega com retentativas de chamadas
+    - linear - sem _backoff_ retentativa com tempo crescente linearmente
+    - _exponential backoff_ retentativa com tempo crescente exponencialmente
+    - _exponential backoff - Jitter_ retentativa em momentos diferentes
