@@ -45,3 +45,12 @@
 - environments
 - tests
 - start slowly
+
+## 9 Characteristics by **Martin Fowler**
+
+### [Componentization via Services](https://martinfowler.com/articles/microservices.html)
+> A component is a unit of software that is independently replaceable and upgradeable
+
+<br>
+
+[microservices](https://martinfowler.com/articles/microservices.html)
