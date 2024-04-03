@@ -70,10 +70,21 @@
 >  Tooling for creating artefacts, managing codebases, standing up simple services or for adding standard monitoring and logging are pretty common now.
 > **Make it easy to do the right thing**
 ### Design for failure
-> they can tolerate the failure of services
+> they can tolerate the failure of services - 
 > **Circuit Breaker, Bulkhead and Timeout**
 ### Evolutionary Design
 > **replaceability, modular design** - 
 >  The downside is that you have to worry about changes to one service breaking its consumers.
-<br>
 
+<br><br>
+
+<div align="center">
+<h3>Microservice Trade-Offs</h3>
+
+<img src="https://martinfowler.com/articles/microservice-trade-offs/card.png" label="microservice-trade-offs" />
+
+</div>
+
+<br><br>
+
+## Resilience
