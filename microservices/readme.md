@@ -88,3 +88,23 @@
 <br><br>
 
 ## Resilience
+> Resilience is the ability of the system to adapt in case of failure, with intentionality and strategies
+
+### Resilience Strategies
+1. protect and be protectable
+    - **self-preservation**
+    - **don't hit a dead dog**
+    - a slow service is worse than a offline service
+2. health check
+    - create a way to check system integrity
+    - self healing - **stop requests, process requests and self healing**
+    - smart health check - **passive and active**
+3. rate limiting
+    - based on what it was designed to support
+    - use groups and preferences by client
+4. circuit breaker
+    - **closed circuit** - all requests are acceptable
+    - **open circuit** - requests do not arrive 
+    - **half open** - limited requests to check the system availability
+5. API Gateway
+    - xxx
