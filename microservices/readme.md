@@ -107,4 +107,20 @@
     - **open circuit** - requests do not arrive 
     - **half open** - limited requests to check the system availability
 5. API Gateway
-    - xxx
+    - define policies
+    - implement common resources
+6. service Mesh
+    - control the traffic
+    - monitoring all communications
+    - **use proxies**
+    - mTLS
+    - example: *Istio*
+    - implement: circuit breaker, retry, timeout, fault injection...
+7. asynchronous
+    - prevents data loss
+    - process when you are ready
+8. retry
+    - backoff algorithm
+    - linear - without backoff
+    - exponential backoff
+    - **jitter** (send retry with random time)
