@@ -124,3 +124,7 @@
     - linear - without backoff
     - exponential backoff
     - **jitter** (send retry with random time)
+9. delivery guarantees
+    - **acknowledgement**
+        - kafka (none 0, leader 1, all -1)
+        - rabbitMQ
