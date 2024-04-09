@@ -128,3 +128,7 @@
     - **acknowledgement**
         - kafka (none 0, leader 1, all -1)
         - rabbitMQ
+10. complex situations (how to ensure resilience?)
+    - message broker crashes
+    - lost messages
+    - offline system
