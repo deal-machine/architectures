@@ -124,3 +124,28 @@
     - linear - without backoff
     - exponential backoff
     - **jitter** (send retry with random time)
+9. delivery guarantees
+    - **acknowledgement**
+        - kafka (none 0, leader 1, all -1)
+        - rabbitMQ
+10. complex situations (how to ensure resilience?)
+    - message broker crashes
+    - lost messages
+    - offline system
+11. transactional outbox
+    1. save message in the database
+    2. send message to message broker
+    3. delete message from database
+12. guarantee of receipt
+    - **auto ack** = false + commit
+    - prefetch align on volumetry
+13. idempotence and politics of fallback
+    - duplicity
+    - independency
+    - fallback
+14. observability
+    - app performance monitoring (APM)
+    - tracing distributed
+    - custom metrics
+    - custom spans
+    - open telemetry
