@@ -149,3 +149,8 @@
     - custom metrics
     - custom spans
     - open telemetry
+
+## Choreography and Orchestration
+
+- death star
+- API strategies
