@@ -154,3 +154,14 @@
 
 - death star
 - API strategies
+
+## Patterns
+
+- API Composition
+    - service composer - with or without business logic
+        - lots of information from different sources
+        - availability
+        - high latency
+        - consistency
+        - complexity
+        - synchronization requests
