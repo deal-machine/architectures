@@ -165,3 +165,17 @@
         - consistency
         - complexity
         - synchronization requests
+- Decompose by business capability
+    - domain driven design - bounded contexts
+- Decompose Stragler application
+- ACL - Anti-corruption layer
+- API Gateway
+    - stateless/statefull
+- BFF - Backend for Frontend
+    - GraphQL (?)
+- Databases
+    - shared database
+    - each database per microservice
+    - reports
+- Transactional Outbox
+    - process pending or failed requests for other services
