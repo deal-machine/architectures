@@ -179,3 +179,16 @@
     - reports
 - Transactional Outbox
     - process pending or failed requests for other services
+- Secret Manager
+    - credential storage
+    - key management service
+    - rotational passwords
+- observability - open telemetry
+    - logs
+        - default logs
+    - metrics
+    - tracing
+- service template
+    - starter kits
+    - tool kits
+    - sdk
